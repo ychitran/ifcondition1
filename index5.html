@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        let test = parseInt(prompt("Nhập điểm bài kiểm tra"));
+        let midtest = parseInt(prompt("Nhập điểm kiểm tra giữa kì"));
+        let endtest = parseInt(prompt("Nhập điểm kiểm tra cuối kì"));
+        let average = (test + midtest + endtest) / 3;
+        if (average >= 11) {
+            document.getElementById("result").innerHTML =
+                "Điểm của bạn nhập không hợp lệ";
+        } else if (9 <= average) {
+            document.getElementById("result").innerHTML = "Xếp loại xuất sắc";
+        } else if (8 <= average) {
+            document.getElementById("result").innerHTML = "Xếp loại giỏi";
+        } else if (6.5 <= average) {
+            document.getElementById("result").innerHTML = "Xếp loại khá";
+        } else if (5 <= average) {
+            document.getElementById("result").innerHTML = "Xếp loại trung bình";
+        } else if (3.5 <= average) {
+            document.getElementById("result").innerHTML = "Xếp loại yếu";
+        } else {
+            document.getElementById("result").innerHTML = "Xếp loại kém";
+        }
+    </script>
+</body>
+
+</html>

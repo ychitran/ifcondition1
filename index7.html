@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        let minutes = parseInt(prompt("Nhập số phút cuộc gọi của bạn vào đây"));
+        let second = minutes * 60;
+        //money
+        function money(second) {
+            return (second - 6) * 13.33 + 80;
+        }
+        //result
+        document.getElementById("result").innerHTML =
+            "Số tiền bạn phải trả là " + money(second) + " đồng";
+    </script>
+</body>
+
+</html>
